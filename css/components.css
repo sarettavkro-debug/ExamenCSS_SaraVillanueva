@@ -81,3 +81,20 @@
     border-color: var(--accent-green);
     color: var(--accent-green);
 }
+
+/* Botones */
+.oferta-button {
+    display: inline-block;
+    border: 1px solid var(--accent-green);
+    color: var(--accent-green);
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.oferta-button:hover {
+    background-color: var(--accent-green);
+    color: var(--bg-dark);
+}

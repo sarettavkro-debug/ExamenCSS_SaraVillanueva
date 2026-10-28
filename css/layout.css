@@ -1002,3 +1002,64 @@ FILTRADO DINÁMICO CON CSS PURO (SIN JS)
         font-size: 2.5rem;
     }
 }
+
+.hero-section {
+    position: relative;
+    min-height: 80vh;
+    
+
+    background-image: url("../img/hero/fondojiji.jpg"); 
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.hero-backdrop {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    background: linear-gradient(180deg, rgba(27, 38, 30, 0.85) 0%, rgba(27, 38, 30, 0.5) 100%);
+}
+
+.oferta-card {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 600px;
+    background: rgba(27, 38, 30, 0.55);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border-color);
+    padding: 30px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.hero-tagline {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--accent-green);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.hero-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--accent-green);
+    margin: 10px 0;
+}
+
+.hero-subtitle {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin-bottom: 25px;
+}

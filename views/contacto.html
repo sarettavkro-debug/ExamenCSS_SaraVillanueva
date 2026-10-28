@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMarket | Contacto</title>
+    <meta name="description" content="Ponte en contacto con el equipo de EcoMarket en Bucaramanga.">
+    
+    <!-- Hojas de estilo CSS (Rutas relativas desde views/) -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+
+    <!-- Encabezado (Header) -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">EcoMarket</a>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="sobre-nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#menu" class="icon-link menu-toggle" aria-label="Menú">
+                    <img src="../img/icons/menu.svg" alt="Menú" class="header-icon">
+                </a>
+                <a href="#buscar" class="icon-link" aria-label="Búsqueda">
+                    <img src="../img/icons/lupa.svg" alt="Búsqueda" class="header-icon">
+                </a>
+                <a href="#carrito" class="icon-link" aria-label="Carrito de compras">
+                    <img src="../img/icons/carrito.svg" alt="Carrito" class="header-icon">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="contact-main">
+        <!-- Breadcrumbs y Título -->
+        <div class="contact-header-container">
+            <nav class="breadcrumbs">
+                <a href="../index.html">Inicio</a> / <span>Contacto</span>
+            </nav>
+            <h1 class="contact-title">PONTE EN CONTACTO</h1>
+        </div>
+
+        <!-- Layout Principal: Formulario + Info & Mapa -->
+        <div class="contact-layout">
+            
+            <!-- Formulario Inteligente con Validación Visual CSS -->
+            <section class="contact-form-card">
+                <span class="section-tag">ESCRÍBENOS</span>
+                <h2>Envíanos un mensaje</h2>
+                <p class="form-description">¿Tienes preguntas sobre nuestras colecciones sostenibles o tu pedido? Estamos para ayudarte.</p>
+
+                <form class="intelligent-form" action="#" method="POST" novalidate>
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Sara Villanueva" required minlength="3">
+                        <span class="field-msg invalid-msg">Por favor ingresa tu nombre (mínimo 3 caracteres).</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                        <span class="field-msg invalid-msg">Ingresa un correo electrónico válido.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required minlength="10"></textarea>
+                        <span class="field-msg invalid-msg">El mensaje debe contener al menos 10 caracteres.</span>
+                    </div>
+
+                    <button type="submit" class="submit-button">Enviar Mensaje &rarr;</button>
+                </form>
+            </section>
+
+            <!-- Información, Mapa de Ubicación y Redes Sociales -->
+            <aside class="contact-info-card">
+                <span class="section-tag">UBICACIÓN</span>
+                <h2>Visítanos en Bucaramanga</h2>
+                
+                <div class="info-details">
+                    <p><strong>Dirección:</strong> Carrera 27 # 36-14, Bucaramanga, Santander</p>
+                    <p><strong>Teléfono / WhatsApp:</strong> +57 (300) 123-4567</p>
+                    <p><strong>Email:</strong> hola@ecomarket.co</p>
+                    <p><strong>Horarios de Atención:</strong> Lunes a Sábado de 10:00 AM a 8:00 PM</p>
+                </div>
+
+                <!-- Mapa de Ubicación Estilizado -->
+                <div class="map-container">
+                    <img src="../img/hero/Cupertino.jpeg" alt="Mapa de ubicación EcoMarket Bucaramanga" class="static-map-img">
+                    <div class="map-overlay">
+                        <span class="map-badge">EcoMarket Bucaramanga</span>
+                    </div>
+                </div>
+
+                <!-- Redes Sociales con animación scale al hacer hover -->
+                <div class="social-links-section">
+                    <h3>Síguenos en Redes</h3>
+                    <div class="social-icons-wrapper">
+                        <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">
+                            <img src="../img/icons/redessociales.svg" alt="Instagram" class="social-icon">
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook">
+                            <img src="../img/icons/redessociales.svg" alt="Facebook" class="social-icon">
+                        </a>
+                        <a href="https://whatsapp.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="WhatsApp">
+                            <img src="../img/icons/redessociales.svg" alt="WhatsApp" class="social-icon">
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- Pie de Página (Footer) -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <h3 class="footer-logo">EcoMarket</h3>
+                <p class="footer-subtext">Tienda Ecológica • Bucaramanga, Colombia</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>NAVEGACIÓN</h4>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="sobre-nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>CONTACTO</h4>
+                <ul>
+                    <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="https://whatsapp.com" target="_blank" rel="noopener">WhatsApp</a></li>
+                    <li><a href="mailto:hola@ecomarket.co">hola@ecomarket.co</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>HORARIOS</h4>
+                <p>Lun–Sáb • 10:00 AM – 8:00 PM</p>
+                <p>Envíos sostenibles • 24 h</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
+                <p>Bucaramanga, Santander</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

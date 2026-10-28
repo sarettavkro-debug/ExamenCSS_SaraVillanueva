@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMarket | Catálogo Sostenible</title>
+    <meta name="description" content="Explora el catálogo completo de prendas ecológicas y moda sostenible de EcoMarket.">
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+
+    <!-- Encabezado (Header) -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">EcoMarket</a>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="productos.html" class="active">Productos</a></li>
+                    <li><a href="sobre-nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#menu" class="icon-link menu-toggle" aria-label="Menú">
+                    <img src="../img/icons/menu.svg" alt="Menú" class="header-icon">
+                </a>
+                <a href="#buscar" class="icon-link" aria-label="Búsqueda">
+                    <img src="../img/icons/lupa.svg" alt="Búsqueda" class="header-icon">
+                </a>
+                <a href="#carrito" class="icon-link" aria-label="Carrito de compras">
+                    <img src="../img/icons/carrito.svg" alt="Carrito" class="header-icon">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="catalog-main">
+        <!-- Breadcrumbs y Título -->
+        <div class="catalog-header-container">
+            <nav class="breadcrumbs">
+                <a href="../index.html">Inicio</a> / <span>Productos</span>
+            </nav>
+            <h1 class="catalog-title">CATÁLOGO SOSTENIBLE</h1>
+        </div>
+
+        <!-- Contenedor Principal: Filtros + Buscador + Grid -->
+        <div class="catalog-layout">
+            
+            <!-- Barra lateral de Filtros (Sticky) -->
+            <aside class="filters-sidebar">
+                <div class="filter-group">
+                    <h3>FILTROS</h3>
+                </div>
+
+<div class="filter-group">
+    <h4>Categorías</h4>
+    <ul class="filter-list">
+        <li><label><input type="radio" name="categoria" id="filtro-todos" checked> Todos</label></li>
+        <li><label><input type="radio" name="categoria" id="filtro-casual"> Estilo Casual</label></li>
+        <li><label><input type="radio" name="categoria" id="filtro-deportivo"> Estilo Deportivo</label></li>
+        <li><label><input type="radio" name="categoria" id="filtro-urbano"> Estilo Urbano</label></li>
+        <li><label><input type="radio" name="categoria" id="filtro-artistico"> Estilo Artístico</label></li>
+    </ul>
+</div>
+
+                <div class="filter-group">
+                    <h4>Disponibilidad</h4>
+                    <ul>
+                        <li><label><input type="checkbox" checked> En Stock</label></li>
+                        <li><label><input type="checkbox"> Agotado</label></li>
+                    </ul>
+                </div>
+
+                <div class="filter-group">
+    <h4>Rango de Precio</h4>
+    <div class="price-slider-container">
+        <input type="range" min="20000" max="200000" step="5000" value="120000" class="price-range-input" aria-label="Rango de precio">
+        <div class="price-values">
+            <span>$20.000</span>
+            <span>$200.000 COP</span>
+        </div>
+    </div>
+</div>
+            </aside>
+
+            <!-- Sección de Contenido -->
+            <section class="products-content">
+                
+                <!-- Buscador visual estilizado -->
+                <div class="visual-search-bar">
+                    <input type="text" placeholder="Buscar prendas sostenibles..." aria-label="Buscar">
+                    <button type="submit" aria-label="Buscar">
+                        <img src="../img/icons/lupa.svg" alt="Buscar" class="search-btn-icon">
+                    </button>
+                </div>
+
+                <!-- Grid de 20 Productos -->
+                <div class="catalog-grid">
+
+                    <!-- Producto 1 -->
+                    <article class="product-card cat-casual stock-in">
+                        <div class="card-image-wrapper">
+                            <span class="stock-badge">En Stock</span>
+                            <button class="favorite-btn" aria-label="Añadir a favoritos">&#9825;</button>
+                            <img src="../img/products/Camiseta-Casual .jpg" alt="Camisa de Lino Casual">
+                        </div>
+                        <div class="card-body">
+                            <span class="product-category">ESTILO CASUAL</span>
+                            <h3 class="product-title">Camisa de Lino Algodón</h3>
+                            <p class="product-price">$105.000 COP</p>
+                            <a href="#" class="card-button">Ver más &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Producto 2 -->
+                    <article class="product-card cat-casual">
+                        <div class="card-image-wrapper">
+                            <span class="stock-badge">En Stock</span>
+                            <button class="favorite-btn" aria-label="Añadir a favoritos">&#9825;</button>
+                            <img src="../img/products/Camiseta-Casual.jpg" alt="Top Deportivo de Cáñamo">
+                        </div>
+                        <div class="card-body">
+                            <span class="product-category">ESTILO CASUAL</span>
+                            <h3 class="product-title">Camiseta de algodón</h3>
+                            <p class="product-price">$90.000 COP</p>
+                            <a href="#" class="card-button">Ver más &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Producto 3 -->
+                    <article class="product-card cat-casual">
+                        <div class="card-image-wrapper">
+                            <span class="stock-badge">En Stock</span>
+                            <button class="favorite-btn" aria-label="Añadir a favoritos">&#9825;</button>
+                            <img src="../img/products/Pantalon-casual.jpg" alt="Chaqueta Urbana de Lino">
+                        </div>
+                        <div class="card-body">
+                            <span class="product-category">ESTILO URBANO</span>
+                            <h3 class="product-title">Chaqueta Oversize Lino</h3>
+                            <p class="product-price">$140.000 COP</p>
+                            <a href="#" class="card-button">Ver más &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Producto 4 -->
+                    <article class="product-card cat-casual">
+                        <div class="card-image-wrapper">
+                            <span class="stock-badge agotado">Agotado</span>
+                            <button class="favorite-btn" aria-label="Añadir a favoritos">&#9825;</button>
+                            <img src="../img/products/Sueter (1).jpg" alt="Vestido Bordado Botánico">
+                        </div>
+                        <div class="card-body">
+                            <span class="product-category">ESTILO ARTÍSTICO</span>
+                            <h3 class="product-title">Vestido Bordado Botánico</h3>
+                            <p class="product-price">$165.000 COP</p>
+                            <a href="#" class="card-button">Ver más &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Producto 5 -->
+                    <article class="product-card cat-urbano">
+                        <div class="card-image-wrapper">
+                            <span class="stock-badge">En Stock</span>
+                            <button class="favorite-btn" aria-label="Añadir a favoritos">&#9825;</button>
+                            <img src="../img/products/Bermuda-urbano.jpg" alt="Pantalón Casual de Cáñamo">
+                        </div>
+                        <div class="card-body">
+                            <span class="product-category">ESTILO CASUAL</span>
+                            <h3 class="product-title">Pantalón Talle Alto Cáñamo</h3>
+                            <p class="product-price">$110.000 COP</p>
+                            <a href="#" class="card-button">Ver más &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Producto 6 -->
+                    <article class="product-card cat-urbano">
+                        <div class="card-image-wrapper">
+                            <span class="stock-badge">En Stock</span>
+                            <button class="favorite-btn" aria-label="Añadir a favoritos">&#9825;</button>
+                            <img src="../img/products/Cargo-urbano.jpg" alt="Short Deportivo Sostenible">
+                        </div>
+                        <div class="card-body">
+                            <span class="product-category">ESTILO DEPORTIVO</span>
+                            <h3 class="product-title">Short de Entrenamiento Orgánico</h3>
+                            <p class="product-price">$55.000 COP</p>
+                            <a href="#" class="card-button">Ver más &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Producto 7 -->
+                    <article class="product-card cat-urbano">
+                        <div class="card-image-wrapper">
+                            <span class="stock-badge">En Stock</span>
+                            <button class="favorite-btn" aria-label="Añadir a favoritos">&#9825;</button>
+                            <img src="../img/products/Chaqueta-urbano.jpg" alt="Camiseta Graphic Art">
+                        </div>
+                        <div class="card-body">
+                            <span class="product-category">ESTILO ARTÍSTICO</span>
+                            <h3 class="product-title">Camiseta Ilustrada a Mano</h3>
+                            <p class="product-price">$78.000 COP</p>
+                            <a href="#" class="card-button">Ver más &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Producto 8 -->
+                    <article class="product-card cat-urbano">
+                        <div class="card-image-wrapper">
+                            <span class="stock-badge">En Stock</span>
+                            <button class="favorite-btn" aria-label="Añadir a favoritos">&#9825;</button>
+                            <img src="../img/products/Saco-urbano.jpg" alt="Hoodie Urbano Reciclado">
+                        </div>
+                        <div class="card-body">
+                            <span class="product-category">ESTILO URBANO</span>
+                            <h3 class="product-title">Hoodie Minimalista Algodón</h3>
+                            <p class="product-price">$125.000 COP</p>
+                            <a href="#" class="card-button">Ver más &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Producto 9 -->
+                    <article class="product-card cat-artistico">
+                        <div class="card-image-wrapper">
+                            <span class="stock-badge">En Stock</span>
+                            <button class="favorite-btn" aria-label="Añadir a favoritos">&#9825;</button>
+                            <img src="../img/products/Camisa-Art.jpg" alt="Kimono Artesanal">
+                        </div>
+                        <div class="card-body">
+                            <span class="product-category">ESTILO ARTÍSTICO</span>
+                            <h3 class="product-title">Kimono Textil Artesanal</h3>
+                            <p class="product-price">$150.000 COP</p>
+                            <a href="#" class="card-button">Ver más &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Producto 10 -->
+                    <article class="product-card cat-artistico">
+                        <div class="card-image-wrapper">
+                            <span class="stock-badge agotado">Agotado</span>
+                            <button class="favorite-btn" aria-label="Añadir a favoritos">&#9825;</button>
+                            <img src="../img/products/Chaqueta-art.jpg" alt="Leggings Biodegradables">
+                        </div>
+                        <div class="card-body">
+                            <span class="product-category">ESTILO DEPORTIVO</span>
+                            <h3 class="product-title">Leggings Flex Orgánicos</h3>
+                            <p class="product-price">$88.000 COP</p>
+                            <a href="#" class="card-button">Ver más &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Producto 11 -->
+                    <article class="product-card cat-artistico">
+                        <div class="card-image-wrapper">
+                            <span class="stock-badge">En Stock</span>
+                            <button class="favorite-btn" aria-label="Añadir a favoritos">&#9825;</button>
+                            <img src="../img/products/Sudadera-Art.jpg" alt="Vestido Casual Fresco">
+                        </div>
+                        <div class="card-body">
+                            <span class="product-category">ESTILO CASUAL</span>
+                            <h3 class="product-title">Vestido Midi de Lino</h3>
+                            <p class="product-price">$130.000 COP</p>
+                            <a href="#" class="card-button">Ver más &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Producto 12 -->
+                    <article class="product-card cat-artistico">
+                        <div class="card-image-wrapper">
+                            <span class="stock-badge">En Stock</span>
+                            <button class="favorite-btn" aria-label="Añadir a favoritos">&#9825;</button>
+                            <img src="../img/products/Vestido-art.jpg" alt="Jogger Urbano">
+                        </div>
+                        <div class="card-body">
+                            <span class="product-category">ESTILO URBANO</span>
+                            <h3 class="product-title">Jogger Eco Fleece</h3>
+                            <p class="product-price">$95.000 COP</p>
+                            <a href="#" class="card-button">Ver más &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Producto 13 -->
+                    <article class="product-card cat-deportivo">
+                        <div class="card-image-wrapper">
+                            <span class="stock-badge">En Stock</span>
+                            <button class="favorite-btn" aria-label="Añadir a favoritos">&#9825;</button>
+                            <img src="../img/products/Chaqueta-Deportiva.jpg" alt="Chaleco Bordado Artístico">
+                        </div>
+                        <div class="card-body">
+                            <span class="product-category">ESTILO ARTÍSTICO</span>
+                            <h3 class="product-title">Chaleco Etnico de Lino</h3>
+                            <p class="product-price">$115.000 COP</p>
+                            <a href="#" class="card-button">Ver más &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Producto 14 -->
+                    <article class="product-card cat-deportivo">
+                        <div class="card-image-wrapper">
+                            <span class="stock-badge">En Stock</span>
+                            <button class="favorite-btn" aria-label="Añadir a favoritos">&#9825;</button>
+                            <img src="../img/products/Jogger-Deportivo.jpg" alt="Camiseta Básica Casual">
+                        </div>
+                        <div class="card-body">
+                            <span class="product-category">ESTILO CASUAL</span>
+                            <h3 class="product-title">Camiseta Básica de Algodón</h3>
+                            <p class="product-price">$48.000 COP</p>
+                            <a href="#" class="card-button">Ver más &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Producto 15 -->
+                    <article class="product-card cat-deportivo">
+                        <div class="card-image-wrapper">
+                            <span class="stock-badge agotado">Agotado</span>
+                            <button class="favorite-btn" aria-label="Añadir a favoritos">&#9825;</button>
+                            <img src="../img/products/Shorts-Deportivo (1).jpg" alt="Chaqueta Deportiva">
+                        </div>
+                        <div class="card-body">
+                            <span class="product-category">ESTILO DEPORTIVO</span>
+                            <h3 class="product-title">Cortavientos Reciclado</h3>
+                            <p class="product-price">$135.000 COP</p>
+                            <a href="#" class="card-button">Ver más &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Producto 16 -->
+                    <article class="product-card cat-deportivo">
+                        <div class="card-image-wrapper">
+                            <span class="stock-badge">En Stock</span>
+                            <button class="favorite-btn" aria-label="Añadir a favoritos">&#9825;</button>
+                            <img src="../img/products/Shorts-Deportivo.jpg" alt="Bermuda Urbana">
+                        </div>
+                        <div class="card-body">
+                            <span class="product-category">ESTILO URBANO</span>
+                            <h3 class="product-title">Bermuda de Cáñamo</h3>
+                            <p class="product-price">$72.000 COP</p>
+                            <a href="#" class="card-button">Ver más &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Producto 17 -->
+                    <article class="product-card cat-deportivo">
+                        <div class="card-image-wrapper">
+                            <span class="stock-badge">En Stock</span>
+                            <button class="favorite-btn" aria-label="Añadir a favoritos">&#9825;</button>
+                            <img src="../img/products/Sudadera-Deportivo.jpg" alt="Poncho Artístico">
+                        </div>
+                        <div class="card-body">
+                            <span class="product-category">ESTILO ARTÍSTICO</span>
+                            <h3 class="product-title">Poncho Tejido Sostenible</h3>
+                            <p class="product-price">$120.000 COP</p>
+                            <a href="#" class="card-button">Ver más &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Producto 18 -->
+                    <article class="product-card cat-casual">
+                        <div class="card-image-wrapper">
+                            <span class="stock-badge">En Stock</span>
+                            <button class="favorite-btn" aria-label="Añadir a favoritos">&#9825;</button>
+                            <img src="../img/products/Pantalon-casual.jpg" alt="Musculosa Deportiva">
+                        </div>
+                        <div class="card-body">
+                            <span class="product-category">ESTILO DEPORTIVO</span>
+                            <h3 class="product-title">Musculosa Eco Active</h3>
+                            <p class="product-price">$42.000 COP</p>
+                            <a href="#" class="card-button">Ver más &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Producto 19 -->
+                    <article class="product-card cat-deportivo">
+                        <div class="card-image-wrapper">
+                            <span class="stock-badge">En Stock</span>
+                            <button class="favorite-btn" aria-label="Añadir a favoritos">&#9825;</button>
+                            <img src="../img/products/Top-Deportivo.jpg" alt="Top Urbano">
+                        </div>
+                        <div class="card-body">
+                            <span class="product-category">ESTILO URBANO</span>
+                            <h3 class="product-title">Crop Top Lino Natural</h3>
+                            <p class="product-price">$58.000 COP</p>
+                            <a href="#" class="card-button">Ver más &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Producto 20 -->
+                    <article class="product-card cat-urbano">
+                        <div class="card-image-wrapper">
+                            <span class="stock-badge">En Stock</span>
+                            <button class="favorite-btn" aria-label="Añadir a favoritos">&#9825;</button>
+                            <img src="../img/products/Saco-urbano.jpg" alt="Enterizo Casual">
+                        </div>
+                        <div class="card-body">
+                            <span class="product-category">ESTILO CASUAL</span>
+                            <h3 class="product-title">Enterizo de Lino Orgánico</h3>
+                            <p class="product-price">$155.000 COP</p>
+                            <a href="#" class="card-button">Ver más &rarr;</a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Paginación Visual -->
+                <div class="pagination">
+                    <a href="#" class="page-link disabled">&laquo; Anterior</a>
+                    <a href="#" class="page-link active">1</a>
+                    <a href="#" class="page-link">2</a>
+                    <a href="#" class="page-link">3</a>
+                    <a href="#" class="page-link">Siguiente &raquo;</a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Pie de Página (Footer) -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <h3 class="footer-logo">EcoMarket</h3>
+                <p class="footer-subtext">Tienda Ecológica • Bucaramanga, Colombia</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>NAVEGACIÓN</h4>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="sobre-nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>CONTACTO</h4>
+                <ul>
+                    <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="https://whatsapp.com" target="_blank" rel="noopener">WhatsApp</a></li>
+                    <li><a href="mailto:hola@ecomarket.co">hola@ecomarket.co</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>HORARIOS</h4>
+                <p>Lun–Sáb • 10:00 AM – 8:00 PM</p>
+                <p>Envíos sostenibles • 24 h</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
+                <p>Bucaramanga, Santander</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

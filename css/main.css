@@ -1,0 +1,59 @@
+:root {
+    --verde: #2ecc71;
+    --verde-oscuro: #27ae60;
+    --beige: #f5f5dc;
+    --texto: #2d3a2e;
+    --texto-suave: #5f6f62;
+    --blanco: #ffffff;
+    --rojo: #e74c3c;
+    --radio: 12px;
+    --sombra: 0 2px 8px rgba(0,0,0,.08);
+    --sombra-hover: 0 12px 24px rgba(0,0,0,.15);
+    --fuente: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: var(--fuente);
+    color: var(--texto);
+    background: var(--beige);
+    line-height: 1.6;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+:root {
+    --bg-dark: #1b261e;          /* Verde profundo de fondo estilo Maison Rouge */
+    --bg-card: #233227;          /* Verde oliva oscuro para tarjetas */
+    --accent-green: #7cc382;      /* Verde claro para destacados y botones */
+    --accent-hover: #98d99e;      /* Verde hover */
+    --text-light: #e8eee9;        /* Blanco hueso para lectura clara */
+    --text-muted: #a3b8a6;       /* Texto secundario atenudado */
+    --border-color: rgba(255, 255, 255, 0.1);
+    --font-heading: 'Georgia', serif;
+    --font-body: 'Helvetica Neue', Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+

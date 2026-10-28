@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMarket | Sobre Nosotros</title>
+    <meta name="description" content="Conoce la historia, misión y principios ecológicos de EcoMarket en Bucaramanga.">
+    
+    <!-- Hojas de estilo CSS (Rutas relativas con ../) -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+
+    <!-- Encabezado (Header) -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">EcoMarket</a>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="sobre-nosotros.html" class="active">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#menu" class="icon-link menu-toggle" aria-label="Menú">
+                    <img src="../img/icons/menu.svg" alt="Menú" class="header-icon">
+                </a>
+                <a href="#buscar" class="icon-link" aria-label="Búsqueda">
+                    <img src="../img/icons/lupa.svg" alt="Búsqueda" class="header-icon">
+                </a>
+                <a href="#carrito" class="icon-link" aria-label="Carrito de compras">
+                    <img src="../img/icons/carrito.svg" alt="Carrito" class="header-icon">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="about-main">
+        <!-- Breadcrumbs y Título -->
+        <div class="about-header-container">
+            <nav class="breadcrumbs">
+                <a href="../index.html">Inicio</a> / <span>Sobre Nosotros</span>
+            </nav>
+            <h1 class="about-title">NUESTRA HISTORIA Y VALORES</h1>
+        </div>
+
+        <!-- 1. Sección de Historia (Flexbox: Imagen + Texto) -->
+        <section class="about-history-section">
+            <div class="history-image-wrapper">
+                <img src="../img/hero/historia.jpg" alt="Orígenes de EcoMarket">
+            </div>
+            <div class="history-text-content">
+                <span class="section-tag">EL ORIGEN</span>
+                <h2>Nacido en las montañas de Santander</h2>
+                <p>EcoMarket nació en Bucaramanga impulsado por una visión clara: transformar la manera en que consumimos moda y estilo de vida. Inspirados por la riqueza natural de nuestra región, un grupo de apasionados por el diseño decidió crear una alternativa que fusionara la elegancia estética con un compromiso real hacia el planeta.</p>
+                <p>Desde nuestros inicios, apostamos por prendas de estilos casual, deportivo, urbano y artístico confeccionadas exclusivamente con algodón orgánico, cáñamo y materiales reciclados, demostrando que la moda sostenible puede ser sofisticada y accesible.</p>
+            </div>
+        </section>
+
+        <!-- 2. Principios Ecológicos -->
+        <section class="principles-section">
+            <div class="section-header center">
+                <span class="section-tag">FILOSOFÍA</span>
+                <h2>Nuestros Principios Ecológicos</h2>
+            </div>
+            <div class="principles-grid">
+                <div class="principle-card">
+                    <div class="principle-icon-wrapper">
+                        <img src="../img/icons/leaf.svg" alt="Sin Plástico" class="principle-icon">
+                    </div>
+                    <h3>Sin Plástico</h3>
+                    <p>Eliminamos por completo los plásticos de un solo uso en toda nuestra cadena de empaque y distribución.</p>
+                </div>
+                <div class="principle-card">
+                    <div class="principle-icon-wrapper">
+                        <img src="../img/icons/handshake.svg" alt="Comercio Justo" class="principle-icon">
+                    </div>
+                    <h3>Comercio Justo</h3>
+                    <p>Trabajamos de la mano con talleres artesanales locales, garantizando salarios justos y condiciones éticas.</p>
+                </div>
+                <div class="principle-card">
+                    <div class="principle-icon-wrapper">
+                        <img src="../img/icons/recycle.svg" alt="Materiales Orgánicos" class="principle-icon">
+                    </div>
+                    <h3>Materiales Orgánicos</h3>
+                    <p>Seleccionamos fibras 100% biodegradables y recicladas que cuidan tu piel y el medio ambiente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Testimonios (Carrusel CSS con animación Hover) -->
+        <section class="testimonials-section">
+            <div class="section-header center">
+                <span class="section-tag">COMUNIDAD</span>
+                <h2>Lo que dicen nuestros clientes</h2>
+            </div>
+            <div class="testimonials-carousel">
+                
+                <div class="testimonial-card">
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="comment">"La calidad de las prendas urbanas es increíble. Saber que compro ropa sostenible y libre de plástico en Bucaramanga me encanta."</p>
+                    <span class="client-name">— Valentina Ruiz</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="comment">"El estilo artístico de sus colecciones es único. El envío fue rápido y el empaque completamente ecológico. 100% recomendados."</p>
+                    <span class="client-name">— Carlos Andrés Gómez</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="comment">"Me fascina la durabilidad de los materiales orgánicos. Se nota el compromiso real con el medio ambiente en cada detalle."</p>
+                    <span class="client-name">— Mariana Torres</span>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de Página (Footer) -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <h3 class="footer-logo">EcoMarket</h3>
+                <p class="footer-subtext">Tienda Ecológica • Bucaramanga, Colombia</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>NAVEGACIÓN</h4>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="sobre-nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>CONTACTO</h4>
+                <ul>
+                    <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="https://whatsapp.com" target="_blank" rel="noopener">WhatsApp</a></li>
+                    <li><a href="mailto:hola@ecomarket.co">hola@ecomarket.co</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>HORARIOS</h4>
+                <p>Lun–Sáb • 10:00 AM – 8:00 PM</p>
+                <p>Envíos sostenibles • 24 h</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
+                <p>Bucaramanga, Santander</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
